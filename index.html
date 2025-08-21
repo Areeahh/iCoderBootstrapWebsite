@@ -1,0 +1,333 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.rtl.min.css"
+        integrity="sha384-Xbg45MqvDIk1e563NLpGEulpX6AvL404DP+/iCgW9eFa2BqztiwTexswJo2jLMue" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="login.css">
+
+
+
+    <title>iCoder-Heaven for programmers</title>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">iCoder</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Collapsible content -->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <!-- Left nav links -->
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="/">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/about.html">About</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Topics
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Technology</a></li>
+                            <li><a class="dropdown-item" href="#">Web Development</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Support</a></li>
+                            <li><a class="dropdown-item" href="#">Write for Us</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/contactus.html">Contact Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                    </li>
+                </ul>
+
+                <!-- Search -->
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-primary" type="submit">Search</button>
+                </form>
+
+                <!-- Login / Signup buttons -->
+                <div class="d-flex gap-2 ms-3">
+                    <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#loginModal">Login</button>
+                    <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#signupModal">Sign Up</button>
+                </div>
+            </div> <!-- CLOSE collapse -->
+        </div> <!-- CLOSE container-fluid -->
+    </nav>
+   
+   <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+            aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+            aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+            aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1600&q=100"
+                class="d-block w-100" alt="technology">
+            <div class="carousel-caption d-none d-md-block">
+                <h5>Welcome to iCoder</h5>
+                <p>Technology News , Development and Trends </p>
+                <button class="btn btn-danger">Technology</button>
+                <button class="btn btn-primary">Web Development</button>
+                <button class="btn btn-success">Tech Fun</button>
+            </div>
+        </div>
+
+        <div class="carousel-item">
+            <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=1600&q=100"
+                class="d-block w-100" alt="computer">
+            <div class="carousel-caption d-none d-md-block">
+                <h5>The Best Coding Block</h5>
+                <p>Technology News , Development and Trends </p>
+                <button class="btn btn-danger">Technology</button>
+                <button class="btn btn-primary">Web Development</button>
+                <button class="btn btn-success">Tech Fun</button>
+            </div>
+        </div>
+
+        <div class="carousel-item">
+            <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1600&q=100"
+                class="d-block w-100" alt="coding">
+            <div class="carousel-caption d-none d-md-block">
+                <h5>Award Winning Block</h5>
+                <p>Technology News , Development and Trends </p>
+                <button class="btn btn-danger">Technology</button>
+                <button class="btn btn-primary">Web Development</button>
+                <button class="btn btn-success">Tech Fun</button>
+            </div>
+        </div>
+    </div>
+    
+    <!-- These buttons were moved INSIDE the carousel div -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+</div>
+   
+    <div class="container my-4">
+        <div class="row g-3">
+
+            <!-- First card -->
+            <div class="col-md-6">
+                <div class="row g-0 border rounded overflow-hidden flex-md-row shadow-sm h-100 position-relative">
+                    <div class="col p-4 d-flex flex-column position-static">
+                        <strong class="d-inline-block mb-2 text-success-emphasis">World</strong>
+                        <h3 class="mb-0">Global Coding Conferences </h3>
+                        <div class="mb-1 text-body-secondary">Nov 11</div>
+                        <p class="mb-auto">
+                            This is a wider card with supporting text below as a natural lead-in to
+                            additional content.
+                        </p>
+                        <a href="#" class="icon-link gap-1 icon-link-hover stretched-link">
+                            Continue reading
+                            <svg class="bi" aria-hidden="true">
+                                <use xlink:href="#chevron-right"></use>
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="col-auto d-none d-lg-block">
+                        <!-- ✅ Working Unsplash image -->
+                        <img src="https://cdn.stocksnap.io/img-thumbs/280h/business-office_IHBPBLYUFE.jpg"
+                            alt="AI workspace" style="width:200px; height:250px; object-fit:cover; border-radius:0;">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Second card -->
+            <div class="col-md-6">
+                <div class="row g-0 border rounded overflow-hidden flex-md-row shadow-sm h-100 position-relative">
+                    <div class="col p-4 d-flex flex-column position-static">
+                        <strong class="d-inline-block mb-2 text-success-emphasis">Design</strong>
+                        <h3 class="mb-0">Learn Web designing</h3>
+                        <div class="mb-1 text-body-secondary">Nov 12</div>
+                        <p class="mb-auto">
+                            Supporting text for the second post goes here as placeholder content.
+                        </p>
+                        <a href="#" class="icon-link gap-1 icon-link-hover stretched-link">
+                            Continue reading
+                            <svg class="bi" aria-hidden="true">
+                                <use xlink:href="#chevron-right"></use>
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="col-auto d-none d-lg-block">
+                        <!-- ✅ Another working Unsplash image -->
+                        <img src="https://images.all-free-download.com/images/thumb/business_team_people_icon_web_312516.webp"
+                            alt="Laptop coding" style="width:200px; height:250px; object-fit:cover; border-radius:0;">
+                    </div>
+                </div>
+            </div>
+
+
+
+            <!-- Third card -->
+            <div class="col-md-6">
+                <div class="row g-0 border rounded overflow-hidden flex-md-row shadow-sm h-100 position-relative">
+                    <div class="col p-4 d-flex flex-column position-static">
+                        <strong class="d-inline-block mb-2 text-danger">FrontEnd</strong>
+                        <h3 class="mb-0">Learn BootStrap </h3>
+                        <div class="mb-1 text-body-secondary">Nov 11</div>
+                        <p class="mb-auto">
+                            This is a wider card with supporting text below as a natural lead-in to
+                            additional content.
+                        </p>
+                        <a href="#" class="icon-link gap-1 icon-link-hover stretched-link">
+                            Continue reading
+                            <svg class="bi" aria-hidden="true">
+                                <use xlink:href="#chevron-right"></use>
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="col-auto d-none d-lg-block">
+                        <!-- ✅ Working Unsplash image -->
+                        <img src="https://cdn.stocksnap.io/img-thumbs/280h/technology-devices_POMITFCBJZ.jpg"
+                            alt="AI workspace" style="width:200px; height:250px; object-fit:cover; border-radius:0;">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Fourth card -->
+            <div class="col-md-6">
+                <div class="row g-0 border rounded overflow-hidden flex-md-row shadow-sm h-100 position-relative">
+                    <div class="col p-4 d-flex flex-column position-static">
+                        <strong class="d-inline-block mb-2 text-warning">Python</strong>
+                        <h3 class="mb-0">Learn Python</h3>
+                        <div class="mb-1 text-body-secondary">Nov 12</div>
+                        <p class="mb-auto">
+                            Supporting text for the second post goes here as placeholder content.
+                        </p>
+                        <a href="#" class="icon-link gap-1 icon-link-hover stretched-link">
+                            Continue reading
+                            <svg class="bi" aria-hidden="true">
+                                <use xlink:href="#chevron-right"></use>
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="col-auto d-none d-lg-block">
+                        <!-- ✅ Another working Unsplash image -->
+                        <img src="https://images.all-free-download.com/images/thumb/web_technology_conceptual_banner_template_modern_3d_dark_techno_elements_6939048.webp"
+                            alt="Laptop coding" style="width:200px; height:250px; object-fit:cover; border-radius:0;">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+ <!-- Login Modal -->
+    <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="loginModalLabel">Login</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="loginUsername" class="form-label">Username</label>
+                            <input type="text" class="form-control" id="loginUsername" placeholder="Username">
+                        </div>
+                        <div class="mb-3">
+                            <label for="loginPassword" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="loginPassword" placeholder="Password">
+                        </div>
+                        <div class="mb-3 form-check">
+                            <input type="checkbox" class="form-check-input" id="rememberMe">
+                            <label class="form-check-label" for="rememberMe">Remember me</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100">Login</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Signup Modal -->
+    <div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="signupModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="signupModalLabel">Sign Up</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="signupUsername" class="form-label">Username</label>
+                            <input type="text" class="form-control" id="signupUsername" placeholder="Username">
+                        </div>
+                        <div class="mb-3">
+                            <label for="signupEmail" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="signupEmail" placeholder="Email">
+                        </div>
+                        <div class="mb-3">
+                            <label for="signupPassword" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="signupPassword" placeholder="Password">
+                        </div>
+                        <div class="mb-3">
+                            <label for="confirmPassword" class="form-label">Confirm Password</label>
+                            <input type="password" class="form-control" id="confirmPassword" placeholder="Confirm Password">
+                        </div>
+                        <button type="submit" class="btn btn-success w-100">Sign Up</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- FOOTER -->
+    <footer class="container">
+
+        <p>© 2025–2026 iCoder, Inc. · <a href="#">Privacy</a> · <a href="#">Terms</a></p>
+        <p class="float-end">
+            <a href="#">Back to top</a>
+        </p>
+    </footer>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+        crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.min.js" integrity="sha384-7qAoOXltbVP82dhxHAUje59V5r2YsVfBafyUDxEdApLPmcdhBPg1DKg1ERo0BZlK" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>
